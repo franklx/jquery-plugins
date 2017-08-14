@@ -31,7 +31,7 @@
             } else if (element.data("datepicker")) {
                 try {
                     if (element.val() == "") throw true;
-                    return element.data("datepicker").date.toISOString();
+                    return element.data("datepicker").viewDate.toISOString();
                 } catch (e) {
                     return null;
                 }
